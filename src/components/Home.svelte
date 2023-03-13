@@ -1,6 +1,4 @@
-<script>
-	// @ts-nocheck
-
+<script lang="ts">
 	import ScoreBoard from './ScoreBoard.svelte';
 	import data from '../data/data.json';
 </script>
@@ -19,7 +17,7 @@
 		<div class="right">
 			<h1 class="heading">Summary</h1>
 			{#each data as item}
-				<ScoreBoard icon={item.icon} text={item.category} score={item.score} color={item.color} />
+				<ScoreBoard text={item.category} score={item.score} icon={item.icon} color={item.color} />
 			{/each}
 			<div class="continue">Continue</div>
 		</div>
