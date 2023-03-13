@@ -17,7 +17,7 @@
 			<div class="result">You scored higher than 65% of the people who have taken these tests.</div>
 		</div>
 		<div class="right">
-			<div class="heading">Summary</div>
+			<h1 class="heading">Summary</h1>
 			{#each data as item}
 				<ScoreBoard icon={item.icon} text={item.category} score={item.score} color={item.color} />
 			{/each}
